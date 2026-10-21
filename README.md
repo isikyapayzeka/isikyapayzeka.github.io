@@ -74,11 +74,14 @@ eposta: "kulup@ornek.edu.tr",
 ```
 etkinlik: {
   baslik: "Yapay Zekaya Giriş Atölyesi",
+  baslikEn: "Intro to AI Workshop",
   baslangic: "2026-11-05 18:00",
   bitis: "2026-11-05 20:00",
   yer: "Şile Kampüsü, Konferans Salonu",
+  yerEn: "Şile Campus, Conference Hall",
   kayitLinki: "https://forms.gle/....",
-  aciklama: ""
+  aciklama: "",
+  aciklamaEn: ""
 },
 ```
 - Tarihleri Türkiye saatiyle, `YIL-AY-GÜN SAAT:DAKİKA` biçiminde yazın.
@@ -90,14 +93,16 @@ etkinlik: {
 **Geçmiş etkinlik eklemek:**
 ```
 gecmisEtkinlikler: [
-  { baslik: "Yapay Zekaya Giriş Atölyesi", tarih: "2026-11-05", link: "https://www.instagram.com/p/..." },
-  { baslik: "Welcome Etkinliği", tarih: "2026-10-08", link: "https://www.instagram.com/reel/..." },
+  { baslik: "Yapay Zekaya Giriş Atölyesi", baslikEn: "Intro to AI Workshop", tarih: "2026-11-05", link: "https://www.instagram.com/p/..." },
+  { baslik: "Welcome Etkinliği", baslikEn: "Welcome Event", tarih: "2026-10-08", link: "https://www.instagram.com/reel/..." },
 ]
 ```
 - Başlıkları kısa tutun, telefonda tek satıra sığsın.
 - Sıralama önemli değil, sayfa etkinlikleri en yeniden eskiye kendisi dizer.
 - `link` boş bırakılabilir. O zaman satır tıklanmaz, sadece tarih ve başlık görünür.
 - Liste boşken "Geçmiş etkinlikler" butonu görünmez.
+
+**İngilizce alanlar:** Sonu `En` ile biten alanlar (`baslikEn`, `yerEn`, `aciklamaEn`) sayfa İngilizce açıldığında görünür. Boş bırakılırsa İngilizce sayfada Türkçesi gösterilir. Butonların ve başlıkların İngilizcesi kodun içinde hazır, onlar için bir şey yapmanız gerekmez.
 
 **Dönem değişince:** `donem: "2027–28",`
 
@@ -107,6 +112,8 @@ Depoda `index.html` → **History** bölümünden önceki sürümü açıp içer
 ---
 
 ## Notlar
+- Sayfa ilk açılışta dil sorar (Türkçe / English). Seçim o telefonda hatırlanır, sağ üstteki düğmeyle değiştirilebilir.
+- Google Formlar ve WhatsApp grubu tek dilli kalır. Gerekirse formlara İngilizce açıklama eklenebilir.
 - Logolar dosyanın içine gömülüdür, ayrıca yüklemeniz gerekmez.
 - Aynı link iki kez yazılırsa sayfada yalnızca bir kez görünür.
 - `konum` alanı şu an Google Haritalar'da "Işık Üniversitesi Şile Kampüsü" aramasını açar. Kesin bir konum linkiniz varsa onunla değiştirin.
